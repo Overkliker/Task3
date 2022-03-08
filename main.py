@@ -3,7 +3,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/training/<list>')
+@app.route('/list_prof/<list>')
 def nextlvl(list):
     if 'ol' in list:
         return render_template('list_prof_num.html')
